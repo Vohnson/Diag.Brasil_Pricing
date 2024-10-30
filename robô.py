@@ -95,12 +95,12 @@ try:
     user_field = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, 'Input_UsernameVal'))
     )
-    user_field.send_keys("37028758400")
+    user_field.send_keys("COLOCAR SEU LOGIN")
     
     password_field = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, 'Input_PasswordVal'))
     )
-    password_field.send_keys("12F46G63H")
+    password_field.send_keys("COLOCAR SUA SENHA")
     password_field.send_keys(Keys.ENTER)
 
     WebDriverWait(driver, 10).until(EC.url_changes('https://out-prd.diagnosticosdobrasil.com.br/Portal/Login?ServSol=c14296'))
